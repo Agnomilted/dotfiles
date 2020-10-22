@@ -1,0 +1,12 @@
+
+rofi.combi-modi:    window,drun,ssh
+rofi.modi:          combi,run
+rofi.width: 100
+rofi.lines: 6
+rofi.padding: 700
+rofi.eh: 2
+rofi.opacity: 85
+rofi.bw: 0
+rofi.color-normal: #2f2f2f, #f3f4f5, #2f2f2f, #2f2f2f, #9575cd
+rofi.color-window: #2f2f2f, #2f2f2f, #2f2f2f
+rofi.font: SFNS Display 10
