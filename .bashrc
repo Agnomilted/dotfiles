@@ -116,3 +116,6 @@ if ! shopt -oq posix; then
 fi
 alias dwmsource='vim /home/agnom/src/dwm/config.h'
 alias dwmcmp='cd /home/agnom/src/dwm && sudo make clean install'
+alias screenshot='import -window root -pause 5 /home/agnom/screenshot.png'
+alias disassemble='objdump -M intel -d'
+alias nasm64='nasm -f elf64'
