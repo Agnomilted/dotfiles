@@ -57,7 +57,8 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-	export PS1="\u \w>\[$(tput sgr0)\] "
+	export PS1="\w $\[$(tput sgr0)\] "
+#	export PS1="\u \w>\[$(tput sgr0)\] "
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 else
@@ -93,7 +94,8 @@ fi
 # some more ls aliases
 alias ll='ls -l'
 alias la='ls -A'
-alias lah='ls -lah'
+alias lah='ls -lAh'
+alias lh='ls -lh'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -115,7 +117,11 @@ if ! shopt -oq posix; then
   fi
 fi
 alias dwmsource='vim /home/agnom/src/dwm/config.h'
-alias dwmcmp='cd /home/agnom/src/dwm && sudo make clean install'
+alias dwmcmp='sudo make -C ~/src/dwm/ install'
+#alias dwmcmp='cd /home/agnom/src/dwm && sudo make clean install'
 alias screenshot='import -window root -pause 5 /home/agnom/screenshot.png'
 alias disassemble='objdump -M intel -d'
 alias nasm64='nasm -f elf64'
+alias fetch='neofetch --source ~/pics/amongdrip --color_blocks off'
+alias bashrc='vim ~/.bashrc'
+alias e='vim'
