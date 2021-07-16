@@ -96,6 +96,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias lah='ls -lAh'
 alias lh='ls -lh'
+alias lla='la -lA'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -118,10 +119,15 @@ if ! shopt -oq posix; then
 fi
 alias dwmsource='vim /home/agnom/src/dwm/config.h'
 alias dwmcmp='sudo make -C ~/src/dwm/ install'
-#alias dwmcmp='cd /home/agnom/src/dwm && sudo make clean install'
+alias dwms='vim /home/agnom/src/dwm/config.h'
+alias dwmc='sudo make -C ~/src/dwm/ install'
 alias screenshot='import -window root -pause 5 /home/agnom/screenshot.png'
 alias disassemble='objdump -M intel -d'
 alias nasm64='nasm -f elf64'
-alias fetch='neofetch --source ~/pics/amongdrip --color_blocks off'
+alias fetch='neofetch --source ~/pics/amongdrip --color_blocks off --disable de'
 alias bashrc='vim ~/.bashrc'
 alias e='vim'
+alias d='sudo'
+alias f='sudo apt'
+alias fi='sudo apt install'
+alias py='python3'
