@@ -19,6 +19,20 @@
  *color15: #ebdbb2
  *color16: #ffffff
 
+! dwm.normbgcolor: #2f2f2f
+! dwm.normbordercolor: #2f2f2f
+! dwm.normfgcolor: #ebdbb2
+! dwm.selbgcolor: #504945
+! dwm.selbordercolor: #504945
+! dwm.selfgcolor: #ebdbb2
+! dwm.borderpx: 1
+! dwm.snap: 32
+! dwm.showbar: 1
+! dwm.topbar: 1
+! dwm.nmaster: 1
+! dwm.resizehints: 1
+! dwm.mfact: 0.5
+
 dwm.normbgcolor: #2f2f2f
 dwm.normbordercolor: #2f2f2f
 dwm.normfgcolor: #ebdbb2
