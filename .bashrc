@@ -9,6 +9,8 @@ alias ls='ls --color=auto'
 PS1="\w $\[$(tput sgr0)\] "
 
 export EDITOR='nvim'
+export TERMINAL='st'
+export BROWSER='firefox'
 
 # some ls aliases
 alias ll='ls -l'
@@ -25,6 +27,7 @@ alias e=$EDITOR
 alias d='doas'
 alias n='neofetch'
 alias q='exit'
+alias ':q'='exit'
 alias f='yay'
 alias fi='yay -S'
 alias fr='yay -Rs'
@@ -32,13 +35,11 @@ alias py='python3'
 alias wireless='nmcli device wifi'
 
 alias dwms='$EDITOR /home/agnom/src/dwm/config.h'
-alias dwmc='sudo make -C ~/src/dwm/ install'
+alias dwmc='doas make -C ~/src/dwm/ install'
 
 alias bb='$EDITOR $HOME/.config/bspwm/bspwmrc'
 alias bs='$EDITOR $HOME/.config/bspwm/sxhkdrc'
 alias bp='$EDITOR $HOME/.config/polybar/config'
-
-# export desktop=dwm
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

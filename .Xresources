@@ -19,6 +19,8 @@
  *color15: #ebdbb2
  *color16: #ffffff
 
+! *font: Hack:pixelsize=14:antialias=true:autohint=true
+
 ! dwm.normbgcolor: #2f2f2f
 ! dwm.normbordercolor: #2f2f2f
 ! dwm.normfgcolor: #ebdbb2
