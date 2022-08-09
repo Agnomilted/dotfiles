@@ -8,9 +8,10 @@
 alias ls='ls --color=auto'
 PS1="\w $\[$(tput sgr0)\] "
 
+export HOME='/home/agnom'
 export EDITOR='nvim'
 export TERMINAL='st'
-export BROWSER='firefox'
+export BROWSER='qutebrowser'
 
 # some ls aliases
 alias ll='ls -l'
@@ -19,6 +20,8 @@ alias lah='ls -lAh'
 alias lh='ls -lh'
 alias lla='la -lA'
 
+alias mv='mv -i'
+
 alias disassemble='objdump -M intel -d'
 alias nasm64='nasm -f elf64'
 alias bashrc='$EDITOR ~/.bashrc'
@@ -26,6 +29,8 @@ alias fehbg='feh --bg-scale'
 alias e=$EDITOR
 alias d='doas'
 alias n='neofetch'
+alias r='ranger'
+alias h='htop'
 alias q='exit'
 alias ':q'='exit'
 alias f='yay'
@@ -41,6 +46,9 @@ alias bb='$EDITOR $HOME/.config/bspwm/bspwmrc'
 alias bs='$EDITOR $HOME/.config/bspwm/sxhkdrc'
 alias bp='$EDITOR $HOME/.config/polybar/config'
 
+alias ci='xclip -selection clipboard'
+alias co='xclip -selection clipboard -o'
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -51,6 +59,12 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=10000
 HISTFILESIZE=20000
+
+# vi mode
+# set -o emacs
+set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
